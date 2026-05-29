@@ -27,12 +27,28 @@ Window {
             height: parent.height * 0.8
             spacing: parent.height * 0.02
             anchors.centerIn: parent
-            FTButton{
-                id:button
+            ExpandablePanel {
+                id: demoPanel
                 width: parent.width
-                text: "NumberInputDemo"
-                onClicked: {
-                    loader.source = "Demo/NumberInputDemo.qml"
+                title: "Demo Item"
+                FTButton{
+                    width: parent.width
+                    text: "NumberInputDemo"
+                    onClicked: {
+                        loader.source = "Demo/NumberInputDemo.qml"
+                    }
+                }
+            }
+            ExpandablePanel {
+                id: compoentPanel
+                width: parent.width
+                title: "Compoent Item"
+                FTButton{
+                    width: parent.width
+                    text: "Button"
+                    onClicked: {
+                        loader.sourceComponent = defaultLoader
+                    }
                 }
             }
         }
@@ -46,6 +62,15 @@ Window {
         Loader{
             id:loader
             anchors.centerIn: parent
+            sourceComponent: defaultLoader
+        }
+    }
+
+    Component{
+        id:defaultLoader
+        Image{
+            anchors.centerIn: parent
+            source: "Icon/main.png"
         }
     }
 
