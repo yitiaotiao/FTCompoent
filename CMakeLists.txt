@@ -20,6 +20,8 @@ qt_add_qml_module(appsimpleCompoent
         QML_FILES Compoent/NumberInput.qml
         QML_FILES Compoent/FTRectangle.qml
         RESOURCES Icon/iconfont.ttf
+        QML_FILES Compoent/FTButton.qml
+        QML_FILES Demo/NumberInputDemo.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
