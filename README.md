@@ -2,6 +2,8 @@
 
 FTCompoent is a custom QML component library for Qt 6, including several demo to showcase component usage（Pending update）.
 
+<img width="1025" height="525" alt="image" src="https://github.com/user-attachments/assets/96de5ffc-3d69-4254-94da-63a1e628f955" />
+
 ## Features
 - Custom reusable QML components
 - Example demo programs for quick start
